@@ -1,5 +1,7 @@
 # AtavismEditor
 
+AtavismManager (AtavismEditor) is an Electron + Angular desktop editor for managing Atavism MMO server data and configuration.
+
 This project was build using [Electron](https://www.electronjs.org/docs/tutorial/development-environment) and [Angular](https://angular.io/guide/setup-local) latest versions.
 
 NodeJs@12 and npm@6.4 is necessary to be installed.
