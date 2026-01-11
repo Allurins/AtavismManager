@@ -1,45 +1,44 @@
 # AtavismEditor
 
-AtavismManager (AtavismEditor) is an Electron + Angular desktop editor for managing Atavism MMO server data and configuration.
+AtavismManager (AtavismEditor) — настольный редактор на Electron + Angular для управления данными и конфигурацией сервера Atavism MMO.
 
-This project was build using [Electron](https://www.electronjs.org/docs/tutorial/development-environment) and [Angular](https://angular.io/guide/setup-local) latest versions.
+Проект собран на последних версиях [Electron](https://www.electronjs.org/docs/tutorial/development-environment) и [Angular](https://angular.io/guide/setup-local).
 
-NodeJs@12 and npm@6.4 is necessary to be installed.
-
+Требуются NodeJs@12 и npm@6.4.
 
 ## Development server
 
-To install all dependencies just run `yarn`.
+Чтобы установить зависимости, запустите `yarn`.
 
-To run application locally `yarn start`.
+Чтобы запустить приложение локально, выполните `yarn start`.
 
-Locally application start as browser app, so there is no native access electron solutions.
+Локальный запуск работает как браузерное приложение, без нативных возможностей Electron.
 
-To start application in native windows run `yarn electron:local`. Minus of that is that app is running without live reloading. 
+Чтобы запустить приложение в нативном режиме Windows, выполните `yarn electron:local`. Минус — нет live‑reload.
 
 # Important thing about branches
-Current master contain latest version of application. For now that is version `10.2.0`
+В ветке master находится актуальная версия приложения. Сейчас это версия `10.2.0`.
 
-Previous version is on branch: `production/v10.1.0`.
+Предыдущая версия находится в ветке `production/v10.1.0`.
 
-Important is never update production branch with master.
+Важно: не обновляйте production‑ветку из master.
 
 ## Update changes
 
-We work based on [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/). Based on it we can have well prepared CHANGELOG.md with latest changes made for app.
+Мы используем [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/). На их основе формируется CHANGELOG.md.
 
-Branch names should be base on conventional commits name too.
+Названия веток тоже должны соответствовать conventional commits.
 
-To update version of app needs to run manually one of the command:
+Чтобы обновить версию приложения, вручную выполните одну из команд:
  - Patch: `yarn version`
 
 ## Build application release
 
-To build application release for each OS:
+Чтобы собрать релиз для каждой ОС:
  - Mac OS: `yarn mac:build`
  - Linux OS: `yarn linux:build`
  - Windows OS: `yarn win:build`
  
-Application build is located in folder `release`. 
+Сборка находится в папке `release`.
 
-Important for build application is run commands above, because it prepare, copy and update versions of application package.
+Важно запускать команды выше, так как они готовят, копируют и обновляют версии пакета приложения.
